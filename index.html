@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #container {
+        width: 500px;
+        height: 500px;
+        outline: 1px solid;
+      }
+      .list {
+        width: 500px;
+        height: 300px;
+        outline: 1px solid;
+      }
+      .main {
+        display: flex;
+      }
+      .item {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 50%;
+        background: #000;
+        color: #fff;
+      }
+      .ctx {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="container"></div>
+      <div style="margin-left: 30px;">
+        <div class="list">
+          广度优先
+          <div id="bfs" class="ctx"></div>
+        </div>
+        <div class="list" style="margin-top: 30px;">
+          深度优先
+          <div id="dfs" class="ctx"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
